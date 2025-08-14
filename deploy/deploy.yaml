@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: manmathan/weather:v20250814153332
+        image: manmathan/weather:v20250814153554
         ports:
         - containerPort: 5000
