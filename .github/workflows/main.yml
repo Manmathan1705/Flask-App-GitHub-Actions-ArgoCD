@@ -67,8 +67,8 @@ jobs:
       # Update Github
       - name: Commit the changes
         run: |
-          git config --global user.email "Manmathan1705"
-          git config --global user.name "techmathan1705@gmail.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add deploy/deploy.yaml
           git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
           git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/infosecsingh/Flask-App-GitHub-Actions-ArgoCD.git
